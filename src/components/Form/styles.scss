@@ -1,0 +1,165 @@
+.container{
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    .header-out{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top:20px;
+        .left-content{
+            color:#000000;
+            font-style: normal;
+            font-weight: 500;
+            margin-right: 10px;
+        }
+        .right-content{
+                width: 100px;
+            height: 35px;
+            background: #00839B;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-right: 10px;
+            span{
+                font-family: "VisueltRegular";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 18px;
+                color: #FFFFFF;
+            }
+            
+        }
+    }
+    @keyframes changeColor {
+        from {background:#091353 ;}
+        to {background:#B2F9FC;}
+      }
+    //   .divider{
+    //       margin-top:40%;
+    .circle-class-out{
+        // margin-top:60px;
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top:20%;
+        .circle{
+            background: #091353;
+            margin: 0 1em 1em 0;
+            height:300px;
+            width: 600px;
+            border-top-left-radius: 600px * 2;
+            border-top-right-radius: 600px * 2;
+            animation-name: changeColor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        .form-outer-cont{
+            position: absolute;
+            width: 380px;
+            min-height: 320px;
+            background: #FFFFFF;
+            bottom:75px;
+            display: flex;
+            flex-direction: column;
+        margin-top:20%;
+        margin-bottom:3%;
+            .header-text{
+                color:#000000;
+                font-style: normal;
+                font-weight: 500;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                padding-top:20px;
+            }
+            .label{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                color:#000000;
+                margin-left: 8%;
+                margin-top: 20px;
+            }
+            .input_container {
+                background: #f7f8fb;
+                border: 1px solid #e3eaf6;
+                box-sizing: border-box;
+                border-radius: 5px;
+                height: 35px;
+                margin-top: 16px;
+                max-width: 360px;
+                margin-left: 8%;
+                margin-right:8%;
+                .input {
+                    width: 98%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    margin-left: 3%;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #6c6f78;
+                }
+            }
+            .remember-row{
+                display: flex;
+                flex-direction: row;
+                margin-top: 2%;
+                margin-left: 8%;
+                align-items: flex-end;
+                .remember{
+                    margin-right: 18px;
+                }
+            }
+            .button-cls{
+                max-width: 360px;
+                height: 40px;
+                background: #00839B;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin-left: 8%;
+                margin-right: 8%;
+                margin-top: 4%;
+                span{
+                    font-family: "VisueltRegular";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                }
+            }
+            .help-text{
+                color: #00839B;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 18px;
+                margin-top:4%;
+                margin-bottom:4%;
+                margin-left: 8%;
+                margin-right:8%;
+                text-align: center;
+                span{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+// }
