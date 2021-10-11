@@ -1,6 +1,6 @@
 .container{
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     .header-out{
@@ -38,18 +38,18 @@
     }
     @keyframes changeColor {
         from {background:#091353 ;}
-        to {background:#B2F9FC;}
+        to {background:#39A388;}
       }
     //   .divider{
     //       margin-top:40%;
     .circle-class-out{
         // margin-top:60px;
-        position:absolute;
+        position:relative;
         bottom: 0;
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top:20%;
+        margin-top:15%;
         .circle{
             background: #091353;
             margin: 0 1em 1em 0;
@@ -157,7 +157,40 @@
                 text-align: center;
                 span{
                     text-decoration: underline;
+                    cursor: pointer;
                 }
+            }
+        }
+        .fp-font-link{
+            color:#FFFFFF;
+            text-decoration: underline;
+            position: absolute;
+            top:220px;
+            cursor: pointer;
+            // margin-top: 6%;
+        }
+        .social-login-out{
+            width: 250px;
+            height: 25px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            top:260px;
+            // padding:2%;
+            img{
+                height:15px;
+                margin-right: 15px;
+            }
+            .font-cls{
+                display: flex;
+                font-size: 12px;
+                font-weight: bold;
+                font-style: normal;
+                color:#00839B;
             }
         }
     }

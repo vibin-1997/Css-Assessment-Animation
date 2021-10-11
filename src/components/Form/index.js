@@ -1,5 +1,5 @@
 import './styles.scss';
-
+import Googleicon from '../../assets/google.svg'
 const FormComponent = ()=>{
 return(
     <>
@@ -35,7 +35,13 @@ return(
                       <div className="help-text">This site is Protected by <span>Privacy Policy</span>&nbsp;
                       and <span> Terms of Service apply</span></div>
             </div>
+            <div className="fp-font-link">Forget Your Password?</div>
+            <div className="social-login-out">
+                <img src={Googleicon} alt="Googleicon"/>
+                <div className="font-cls">Login with Google</div>
+            </div>
         </div>
+        
         </div>
     {/* </div> */}
     </>
